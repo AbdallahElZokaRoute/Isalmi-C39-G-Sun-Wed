@@ -3,7 +3,12 @@
     <style name="Base.Theme.IslamiC39GSunWed" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="fontFamily">@font/elmessiri_font</item>
     </style>
 
     <style name="Theme.IslamiC39GSunWed" parent="Base.Theme.IslamiC39GSunWed" />
+
+    <style name="NumberFontFamily">
+        <item name="fontFamily">@font/inter_font</item>
+    </style>
 </resources>

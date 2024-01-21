@@ -2,4 +2,7 @@
     <string name="app_name">Islami-C39-GSun-Wed</string>
     <string name="home">Home</string>
     <string name="profile">Profile</string>
+    <string name="tasbeeh">عدد التسبيحات</string>
+    <string name="zero">0</string>
+    <string name="tasbeeh_phrase">سبحان الله</string>
 </resources>
