@@ -1,6 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/sebha_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+
+        android:src="@drawable/head_of_sebha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+
+        />
+
+    <ImageView
+        android:id="@+id/sebha_body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:clickable="true"
+        android:onClick="rotateImage"
+        android:src="@drawable/body_of_sebha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        android:focusable="true" />
+
+    <TextView
+        android:id="@+id/count_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/tasbeh_count_title"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="@id/sebha_body"
+        app:layout_constraintStart_toStartOf="@id/sebha_body"
+        app:layout_constraintTop_toBottomOf="@id/sebha_body" />
+
+    <View
+
+        android:id="@+id/rectangle_view"
+        android:layout_width="70dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rectangle"
+        android:backgroundTint="#A9B7935F"
+        app:layout_constraintEnd_toEndOf="@+id/count_title"
+        app:layout_constraintStart_toStartOf="@id/count_title"
+        app:layout_constraintTop_toBottomOf="@id/count_title" />
+
+    <TextView
+        android:id="@+id/tasbeeh_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintEnd_toEndOf="@id/rectangle_view"
+        app:layout_constraintStart_toStartOf="@id/rectangle_view"
+        app:layout_constraintTop_toTopOf="@id/rectangle_view"
+        app:layout_constraintBottom_toBottomOf="@id/rectangle_view"
+        android:text="@string/number_of_tsbeeh"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        />
+
+    <View
+        android:id="@+id/rectangle"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rectangle"
+        app:layout_constraintEnd_toEndOf="@id/rectangle_view"
+        app:layout_constraintStart_toStartOf="@id/rectangle_view"
+        app:layout_constraintTop_toBottomOf="@id/rectangle_view" />
+
+    <TextView
+        android:id="@+id/tasbeeh_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="سبحان الله"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle"
+        app:layout_constraintEnd_toEndOf="@id/rectangle"
+        app:layout_constraintStart_toStartOf="@id/rectangle"
+        app:layout_constraintTop_toTopOf="@id/rectangle" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
