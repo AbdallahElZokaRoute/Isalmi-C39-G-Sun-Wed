@@ -10,6 +10,7 @@
         <!--        <item name="colorSecondaryVariant">@color/colorPrimary</item>-->
         <!--        <item name="colorOnSecondary">@color/black</item>-->
         <!--         Status bar color. -->
+        <item name="fontFamily">@font/elmessiri_font</item>
         <item name="android:statusBarColor">@color/goldVariantColor</item>
 
         <!-- Customize your theme here. -->
@@ -24,5 +25,9 @@
         <item name="itemIconTint">@color/ic_bottom_navigation_view_selector</item>
         <item name="itemTextColor">@color/black</item>
         <item name="android:background">@color/goldColor</item>
+    </style>
+
+    <style name="NumberFontFamily">
+        <item name="fontFamily">@font/inter_font</item>
     </style>
 </resources>
