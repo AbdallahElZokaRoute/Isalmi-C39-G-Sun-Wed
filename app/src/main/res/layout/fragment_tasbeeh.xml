@@ -1,6 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/home_bg">
+
+
+
+
+    <ImageView
+        android:id="@+id/seb7a_head_img_view"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="-25dp"
+        android:src="@drawable/head_of_seb7a"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+    <ImageView
+        android:id="@+id/seb7a_body_img_view"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="-25dp"
+        android:src="@drawable/body_of_seb7a"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/seb7a_head_img_view" />
+
+    <TextView
+        android:id="@+id/num_of_tasbeeh_txt_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:padding="8dp"
+        android:text="@string/numOfTasbeeh"
+        android:textColor="@color/black2"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/seb7a_body_img_view" />
+
+    <TextView
+        android:id="@+id/tasbeeh_counter_txt_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rectangle3"
+        android:gravity="center"
+        android:padding="8dp"
+        android:textColor="@color/black2"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/num_of_tasbeeh_txt_view"
+        tools:text="30" />
+
+    <TextView
+        android:id="@+id/tasbeeh_sentence_txt_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rectangle4"
+        android:gravity="center"
+        android:padding="8dp"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tasbeeh_counter_txt_view"
+        tools:text="سبحان الله" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
