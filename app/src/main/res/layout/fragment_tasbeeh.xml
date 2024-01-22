@@ -1,6 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <ImageView
+        android:id="@+id/sebha_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/head_sebha_logo"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="32dp"
+        />
+    <ImageView
+        android:id="@+id/buttonOFsebha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/body_sebha_logo"
+        android:layout_marginTop="78dp"
+        />
+    <TextView
+        android:id="@+id/numberoftasbehat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:text="عدد التسبيحات"
+        android:textSize="32sp"
+        />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/numberOfTasbeha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/numberoftasbehat"
+        tools:text="30"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:backgroundTint="#cab497"
+        android:paddingVertical="26dp"
+        app:cornerRadius="32dp"
+        android:layout_marginTop="28dp"
+        />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/nameOfTasbeha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/numberOfTasbeha"
+        tools:text="سبحان الله"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:backgroundTint="#b7955f"
+        app:cornerRadius="32dp"
+        android:layout_marginTop="16dp"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

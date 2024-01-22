@@ -1,6 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <ImageView
+        android:id="@+id/hadeth_image"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ic_hadeth_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/first_horizontal_line"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/goldColor"
+        app:layout_constraintTop_toBottomOf="@id/hadeth_image" />
+
+    <TextView
+        android:id="@+id/hadeth_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="الأحاديث"
+        android:textColor="@color/black2"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/first_horizontal_line" />
+
+    <View
+        android:id="@+id/second_horizontal_line"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/goldColor"
+        app:layout_constraintTop_toBottomOf="@id/hadeth_title" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/hadeth_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/second_horizontal_line" />
 </androidx.constraintlayout.widget.ConstraintLayout>

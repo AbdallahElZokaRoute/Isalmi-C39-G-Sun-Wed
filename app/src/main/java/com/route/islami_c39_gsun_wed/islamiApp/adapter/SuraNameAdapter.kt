@@ -13,6 +13,7 @@ import com.route.islami_c39_gsun_wed.islamiApp.model.SuraNameIndex
 class SuraNameAdapter(
     val suraItems: List<SuraNameIndex>?
 ) : Adapter<SuraNameAdapter.SuraNameViewHolder>() {
+    var onSuraItemClickListener: OnSuraItemClickListener? = null
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SuraNameViewHolder {
         val context = parent.context
         val inflater = LayoutInflater.from(context)
@@ -30,6 +31,9 @@ class SuraNameAdapter(
 
     override fun onBindViewHolder(holder: SuraNameViewHolder, position: Int) {
         val item = suraItems?.get(position) ?: return
+        holder.suraNameBinding.root.setOnClickListener {
+            onSuraItemClickListener?.onSuraItemClick(item.name, item.index)
+        }
         holder.bind(item)
     }
 
@@ -41,5 +45,8 @@ class SuraNameAdapter(
         }
     }
 
+    interface OnSuraItemClickListener {
+        fun onSuraItemClick(suraName: String, index: Int)
+    }
 
 }

@@ -2,10 +2,12 @@ package com.route.islami_c39_gsun_wed.islamiApp.model
 
 data class SuraNameIndex(val name: String, val index: Int)
 
+//String -> SuraNameIndex( , index )
+
 val suraNamesList = listOf(
-    "الفاتحه",
-    "البقرة",
-    "آل عمران",
+    "الفاتحه", // 0
+    "البقرة", // 1
+    "آل عمران", // 2
     "النساء",
     "المائدة",
     "الأنعام",

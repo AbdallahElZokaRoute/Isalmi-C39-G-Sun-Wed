@@ -6,5 +6,7 @@
     <color name="colorProfile">#FF000000</color>
     <color name="goldColor">#FFB7935F</color>
     <color name="goldVariantColor">#9D835E</color>
+    <color name="black2">#FF242424</color>
+    <color name="white_with_opacity">#A6FFFFFF</color>
 
 </resources>
