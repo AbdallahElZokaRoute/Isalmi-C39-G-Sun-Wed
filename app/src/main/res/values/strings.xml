@@ -3,4 +3,6 @@
     <string name="home">Home</string>
     <string name="profile">Profile</string>
     <string name="islami">Islami</string>
+    <string name="eslamiArabic">إسلامي</string>
+    <string name="numOfTasbeeh">عدد التسبيحات</string>
 </resources>

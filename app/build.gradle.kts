@@ -6,9 +6,7 @@ plugins {
 android {
     namespace = "com.route.islami_c39_gsun_wed"
     compileSdk = 34
-    buildFeatures {
-        viewBinding = true
-    }
+
     defaultConfig {
         applicationId = "com.route.islami_c39_gsun_wed"
         minSdk = 23
@@ -17,6 +15,12 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildFeatures {
+        viewBinding = true
+
+
     }
 
     buildTypes {
