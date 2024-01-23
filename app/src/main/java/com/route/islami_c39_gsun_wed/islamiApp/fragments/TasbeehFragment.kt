@@ -1,5 +1,6 @@
 package com.route.islami_c39_gsun_wed.islamiApp.fragments
 
+import android.animation.ObjectAnimator
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -25,10 +26,18 @@ class TasbeehFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.seb7aIc.setOnClickListener{
+            seb7aRotation()
             tasbeeh()
 
         }
     }
+
+    private fun seb7aRotation() {
+        val rotateAnimator= ObjectAnimator.ofFloat(binding.seb7aIc,"rotation",0f,360f)
+        rotateAnimator.duration=500
+        rotateAnimator.start()
+    }
+
     fun tasbeeh(){
         numberOfTasbeeh = binding.valueOfTasbeeh.text.toString()
         tasbeehContent=binding.tasbeehContent.text.toString()
