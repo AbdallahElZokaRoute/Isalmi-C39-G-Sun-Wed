@@ -42,21 +42,21 @@ class TasbeehFragment : Fragment() {
 
 
 
-        if (numberOfTasbeh < 30) {
+        if (numberOfTasbeh < 33) {
             binding.tasbehNumber.text = (numberOfTasbeh + 1).toString()
             numberOfTasbeh++
-            binding.sebhaBody.rotation = 6F
+            binding.sebhaBody.rotation += 6F
         } else if (numberOfTasbeh == 33 && box == 1) {
             binding.tasbehNumber.text = "0"
             numberOfTasbeh = 0
             box = 2
             binding.tasbehButton.text = "الحمد لله"
-        } else if (numberOfTasbeh == 30 && box == 2) {
+        } else if (numberOfTasbeh == 33 && box == 2) {
             binding.tasbehNumber.text = "0"
             numberOfTasbeh = 0
             box = 3
             binding.tasbehButton.text = "الله أكبر"
-        } else if (numberOfTasbeh == 30 && box == 3) {
+        } else if (numberOfTasbeh == 33 && box == 3) {
             binding.tasbehNumber.text = "0"
             numberOfTasbeh = 0
             box = 1
